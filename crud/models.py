@@ -69,10 +69,35 @@ class Education(models.Model):
     school=models.CharField(max_length=255)
     desc=models.TextField()
 
-    
     def __str__(self):
         return self.school
    
+class Intrest(models.Model):
+    intrest=models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.intrest
+
+class Summary_info(models.Model):
+    name=models.CharField(max_length=150)
+    desc=models.TextField()
+    email = models.EmailField()
+    phone = models.CharField(max_length=20)
+    address = models.CharField(max_length=255)
+   
+    def __str__(self):
+        return self.name
+
+
+class service(models.Model):
+    name=models.CharField(max_length=150)
+    p1 = models.CharField(max_length=120)
+    p2 = models.CharField(max_length=120)
+    p3 = models.CharField(max_length=120)
+
+   
+    def __str__(self):
+        return self.name
 
 
 
