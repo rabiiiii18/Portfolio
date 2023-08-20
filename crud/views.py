@@ -3,7 +3,7 @@ from django .http import HttpResponse
 # from Portfolio.settings import EMAIL_HOST_USER 
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
-from .models import UserProfile,client, Skill, Testimonilas,Education,Intrest,Summary_info,service
+from .models import UserProfile,client, Skill, Testimonilas,Education,Intrest,Summary_info,service,Portfolios
 # from .forms import ContactForm
 # Create your views here.
 
@@ -11,6 +11,7 @@ from .models import UserProfile,client, Skill, Testimonilas,Education,Intrest,Su
 
 
 def home(request):
+    var = "Web"
     info = UserProfile.objects.all()
     count = client.objects.all()
     skills=Skill.objects.all()
@@ -19,7 +20,8 @@ def home(request):
     intrest=Intrest.objects.all()
     summary=Summary_info.objects.all()
     serv=service.objects.all()
-    context = {'info': info,'client': count, 'skills':skills,'test':test,'education':education, 'intrest':intrest,'summary':summary,'serv':serv}
+    portfolio=Portfolios.objects.all()
+    context = {'info': info,'client': count, 'skills':skills,'test':test,'education':education, 'intrest':intrest,'summary':summary,'serv':serv,'portfolio':portfolio,'var':var}
 
     return render(request, "index.html", context)
 

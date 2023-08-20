@@ -100,6 +100,17 @@ class service(models.Model):
         return self.name
 
 
+class Portfolios(models.Model):
+    types=models.CharField(max_length=150)
+    name = models.CharField(max_length=120)
+    image =models.FileField(upload_to="projects/",max_length=255,null=True)
+    link = models.CharField(max_length=120)
+
+   
+    def __str__(self):
+        return self.types
+
+
 
 
 
