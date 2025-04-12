@@ -1,8 +1,13 @@
 import React from "react";
 import { motion } from "motion/react";
-import { div } from "motion/react-client";
-import { easeIn } from "motion";
 const About = () => {
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/ravi-shrestha-cv.pdf'; 
+    link.download = 'raviCV.pdf'; 
+    link.click();
+  };
   return (
     <div>
       <div className="flex justify-between gap-8 flex-wrap lg:flex-nowrap md:flex-nowrap  sm:flex-nowrap my-8">
@@ -133,6 +138,7 @@ const About = () => {
           whileHover={{ rotate: 5, scale: 1.02  }}
           transition={{ duration: 0.3, delay: 0.2, ease: "easeIn" }}
           viewport={{ once: true}}
+          onClick={handleDownload}
           className="border px-3 py-3 rounded-md text-[18px] mt-10 font-bold cursor-pointer bg-[#c9003e] text-[#fff]"
         >
           Download CV

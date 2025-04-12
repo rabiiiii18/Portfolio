@@ -1,4 +1,4 @@
-import { Facebook, House, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Github, House, Instagram, Linkedin,  } from "lucide-react";
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { easeInOut, motion } from "motion/react";
@@ -19,11 +19,19 @@ const socialVariants = {
     transition: { duration: 0.5 },
   },
 };
+const socials = [
+  { Icon: Facebook, url: "https://www.facebook.com/fb.rabishresthaa" },
+  { Icon: Instagram, url: "https://www.instagram.com/rabii_dgaf/" },
+  { Icon: Linkedin, url: "https://www.linkedin.com/in/ravi-shrestha-279077238/" },
+  { Icon: Github, url: "https://github.com/rabiiiii18" },
+];
 
 const Body = () => {
+
+
   return (
-    <div className="flex justify-center items-center flex-col pt-20 mt-12  lg:mt-15 lg:pt-25 px-4">
-      <div className="w-full max-w-7xl h-auto flex flex-col md:flex-row px-10 gap-8 md:gap-[10%] border border-transparent">
+    <div className="flex justify-center items-center flex-col pt-20 mt-12  lg:mt-15 lg:pt-10 px-4">
+      <div className="w-full max-w-7xl h-auto   flex flex-col md:flex-row px-10 gap-8 md:gap-[8%] border border-transparent">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -46,9 +54,10 @@ const Body = () => {
               animate="visible"
               transition={{ staggerChildren: 0.3 }}
             >
-              {[Facebook, Instagram, Linkedin, Twitter].map((Icon, index) => (
+             {socials.map(({ Icon, url }, index) => (
                 <motion.div
                   key={index}
+                  onClick={() => window.open(url, "_blank")}
                   variants={socialVariants}
                   className="bg-[#000] text-white p-2 rounded-full w-[35px] h-[35px] sm:w-[40px] sm:h-[40px] cursor-pointer hover:bg-[#c9003e] transition ease-in duration-200 flex items-center justify-center"
                 >

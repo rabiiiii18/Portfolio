@@ -54,7 +54,7 @@ const Portfolio = () => {
       <motion.h1
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.6, ease: "anticipate" }}
+        transition={{ duration: 0.5, delay: 0.3, ease: "anticipate" }}
         viewport={{ once: true }}
         className="text-[35px] lg:text-[40px] md:text-[40px] sm:text-[40px] font-semibold leading-[40px] ld:leading-[22px] md:leading-[22px] sm:leading-[22px]"
       >
@@ -119,6 +119,7 @@ const Portfolio = () => {
                 className="border-r-3 border-b-3 border-[#c9003e] text-[#c9003e] px-8 py-2 rounded-md text-[16px] font-bold cursor-pointer hover:bg-[#c9003e] hover:text-white transition-all duration-400 ease-in"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => window.open('https://weather-app-gilt-seven-83.vercel.app/', "_blank")}
               >
                 Demo
               </motion.button>
@@ -126,6 +127,7 @@ const Portfolio = () => {
                 className="border-r-3 border-b-3 border-[#c9003e] text-[#c9003e] px-8 py-2 rounded-md text-[16px] font-bold cursor-pointer hover:bg-[#c9003e] hover:text-white transition-all duration-400 ease-in"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => window.open('https://github.com/rabiiiii18/weatherApp', "_blank")}
               >
                 Github
               </motion.button>
@@ -184,6 +186,7 @@ const Portfolio = () => {
                 className="border-r-3 border-b-3 border-[#c9003e] text-[#c9003e] px-8 py-2 rounded-md text-[16px] font-bold cursor-pointer hover:bg-[#c9003e] hover:text-white transition-all duration-400 ease-in"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => window.open('https://mero-khana.vercel.app/', "_blank")}
               >
                 Demo
               </motion.button>
@@ -191,6 +194,7 @@ const Portfolio = () => {
                 className="border-r-3 border-b-3 border-[#c9003e] text-[#c9003e] px-8 py-2 rounded-md text-[16px] font-bold cursor-pointer hover:bg-[#c9003e] hover:text-white transition-all duration-400 ease-in"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => window.open('https://github.com/rabiiiii18/meroKhana', "_blank")}
               >
                 Github
               </motion.button>
@@ -249,6 +253,7 @@ const Portfolio = () => {
                 className="border-r-3 border-b-3 border-[#c9003e] text-[#c9003e] px-8 py-2 rounded-md text-[16px] font-bold cursor-pointer hover:bg-[#c9003e] hover:text-white transition-all duration-400 ease-in"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => window.open('https://to-do-list-flame-tau-65.vercel.app/', "_blank")}
               >
                 Demo
               </motion.button>
@@ -256,6 +261,7 @@ const Portfolio = () => {
                 className="border-r-3 border-b-3 border-[#c9003e] text-[#c9003e] px-8 py-2 rounded-md text-[16px] font-bold cursor-pointer hover:bg-[#c9003e] hover:text-white transition-all duration-400 ease-in"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => window.open('https://github.com/rabiiiii18/To-Do-list', "_blank")}
               >
                 Github
               </motion.button>

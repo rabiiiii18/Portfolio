@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-import { Facebook, House, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Github, House, Instagram, Linkedin, Twitter } from "lucide-react";
 const container = {
   hidden: { opacity: 0 },
   visible: {
@@ -34,6 +34,13 @@ const socialIcon = {
   },
   tap: { scale: 0.9 },
 };
+const socials = [
+  { Icon: Facebook, url: "https://www.facebook.com/fb.rabishresthaa" },
+  { Icon: Instagram, url: "https://www.instagram.com/rabii_dgaf/" },
+  { Icon: Linkedin, url: "https://www.linkedin.com/in/ravi-shrestha-279077238/" },
+  { Icon: Github, url: "https://github.com/rabiiiii18" },
+];
+
 const Footer = () => {
   return (
     <motion.div
@@ -44,9 +51,10 @@ const Footer = () => {
       variants={container}
     >
       <motion.div className="flex gap-5 lg:right-13 lg:top-5" variants={container}>
-        {[Facebook, Instagram, Linkedin, Twitter].map((Icon, index) => (
+      {socials.map(({ Icon, url }, index) => (
           <motion.div
             key={index}
+            onClick={() => window.open(url, "_blank")}
             className="bg-[#c9003e] text-white p-2 rounded-full w-[40px] h-[40px] cursor-pointer"
             variants={item}
             whileHover="hover"

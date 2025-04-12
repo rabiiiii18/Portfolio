@@ -29,7 +29,7 @@ const Skills = () => {
       </motion.h1>
       <div className="mt-8 flex  ">
         <div className=" mt-2 h-auto w-full rounded-xl bg-[#ded9db] py-4  flex lg:justify-between  lg:flex-wrap flex-col lg:flex-row gap-5 items-center  ">
-          
+      
           <div className="lg:w-[45%] w-full  px-3 flex gap-5  justify-between items-center">
             <div className="p-2 lg:w-[45px] lg:h-[45px] w-[35px] h-[35px]  bg-[#dfcad2] rounded-full flex justify-center items-center">
               <svg
@@ -74,8 +74,8 @@ const Skills = () => {
                 <motion.div
                   className="h-full bg-[#c9003e] rounded-full"
                   initial={{ width: 0 }}
-                  whileInView={{ width: "50%" }}
-                  transition={{ duration: 2,delay: 0.9, ease: "easeOut" }}
+                  whileInView={{ width: "90%" }}
+                  transition={{ duration: 0.5,delay: 0.5, ease: "easeOut" }}
                   viewport={{ once: true}}
                 >
                   <div className="h-full flex items-center justify-end pr-2 text-xs text-white">
@@ -115,12 +115,12 @@ const Skills = () => {
                 <motion.div
                   className="h-full bg-[#c9003e] rounded-full"
                   initial={{ width: 0 }}
-                  whileInView={{ width: "50%" }}
-                  transition={{ duration: 2, delay: 0.9,ease: "easeOut" }}
+                  whileInView={{ width: "85%" }}
+                  transition={{ duration: 0.5, delay: 0.5,ease: "easeOut" }}
                   viewport={{ once: true}}
                 >
                   <div className="h-full flex items-center justify-end pr-2 text-xs text-white">
-                    10%
+                    85%
                   </div>
                 </motion.div>
               </div>
@@ -151,12 +151,12 @@ const Skills = () => {
                 <motion.div
                   className="h-full bg-[#c9003e] rounded-full"
                   initial={{ width: 0 }}
-                  whileInView={{ width: "10%" }}
-                  transition={{ duration: 2,delay: 0.9, ease: "easeOut" }}
+                  whileInView={{ width: "80%" }}
+                  transition={{ duration: 0.5,delay: 0.5, ease: "easeOut" }}
                   viewport={{ once: true}}
                 >
                   <div className="h-full flex items-center justify-end pr-2 text-xs text-white">
-                    10%
+                    80%
                   </div>
                 </motion.div>
               </div>
@@ -189,12 +189,12 @@ const Skills = () => {
                 <motion.div
                   className="h-full bg-[#c9003e] rounded-full"
                   initial={{ width: 0 }}
-                  whileInView={{ width: "90%" }}
-                  transition={{ duration: 2, delay: 0.9,ease: "easeOut" }}
+                  whileInView={{ width: "88%" }}
+                  transition={{ duration: 0.5, delay: 0.5,ease: "easeOut" }}
                   viewport={{ once: true}}
                 >
                   <div className="h-full flex items-center justify-end pr-2 text-xs text-white">
-                    90%
+                    88%
                   </div>
                 </motion.div>
               </div>
@@ -223,7 +223,7 @@ const Skills = () => {
                   className="h-full bg-[#c9003e] rounded-full"
                   initial={{ width: 0 }}
                   whileInView={{ width: "70%" }}
-                  transition={{ duration: 2,delay: 0.9, ease: "easeOut" }}
+                  transition={{ duration: 0.5,delay: 0.5, ease: "easeOut" }}
                   viewport={{ once: true}}
                 >
                   <div className="h-full flex items-center justify-end pr-2 text-xs text-white">
@@ -260,12 +260,12 @@ const Skills = () => {
                 <motion.div
                   className="h-full bg-[#c9003e] rounded-full"
                   initial={{ width: 0 }}
-                  whileInView={{ width: "60%" }}
-                  transition={{ duration: 2,delay: 0.9, ease: "easeOut" }}
+                  whileInView={{ width: "75%" }}
+                  transition={{ duration: 0.5,delay: 0.5, ease: "easeOut" }}
                   viewport={{ once: true}}
                 >
                   <div className="h-full flex items-center justify-end pr-2 text-xs text-white">
-                    60%
+                    75%
                   </div>
                 </motion.div>
               </div>
@@ -294,7 +294,7 @@ const Skills = () => {
                   className="h-full bg-[#c9003e] rounded-full"
                   initial={{ width: 0 }}
                   whileInView={{ width: "60%" }}
-                  transition={{ duration: 2,delay: 0.9, ease: "easeOut" }}
+                  transition={{ duration: 0.5,delay: 0.5, ease: "easeOut" }}
                   viewport={{ once: true}}
                 >
                   <div className="h-full flex items-center justify-end pr-2 text-xs text-white">
@@ -330,12 +330,12 @@ const Skills = () => {
                 <motion.div
                   className="h-full bg-[#c9003e] rounded-full"
                   initial={{ width: 0 }}
-                  whileInView={{ width: "60%" }}
-                  transition={{ duration: 2,delay: 0.9, ease: "easeOut" }}
+                  whileInView={{ width: "90%" }}
+                  transition={{ duration: 0.5,delay: 0.5, ease: "easeOut" }}
                   viewport={{ once: true}}
                 >
                   <div className="h-full flex items-center justify-end pr-2 text-xs text-white">
-                    60%
+                    90%
                   </div>
                 </motion.div>
               </div>

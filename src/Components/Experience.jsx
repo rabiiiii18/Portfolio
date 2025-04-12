@@ -43,7 +43,7 @@ const Experience = () => {
         className="h-auto w-full mt-8 rounded-xl bg-[#ded9db] p-5 flex justify-center items-center gap-15"
       >
         <div className="max-w-2xl mx-auto rounded-lg p-8">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -223,7 +223,7 @@ const Experience = () => {
                 </motion.p>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -234,7 +234,7 @@ const Experience = () => {
               ease: [0.16, 1, 0.3, 1],
             }}
             viewport={{ once: true, amount: 0.2 }}
-            className="flex mt-8 flex-col lg:flex-row justify-center items-center px-1  "
+            className="flex flex-col lg:flex-row justify-center items-center px-1  "
           >
             <div className="w-3/5 relative">
               <div className="flex items-center lg:items-end flex-col lg:pr-8 ">
@@ -291,7 +291,7 @@ const Experience = () => {
                   viewport={{ once: true }}
                   className="text-2xl lg:text-3xl md:text-3xl sm:text-3xl  font-bold text-gray-800"
                 >
-                  School
+                  Higher School
                 </motion.h1>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -328,7 +328,7 @@ const Experience = () => {
                 viewport={{ once: true }}
                 className="text-xl font-semibold text-gray-800 mb-2"
               >
-                Bernhardt College
+                kathmandu Bernhardt College
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -337,8 +337,8 @@ const Experience = () => {
                 viewport={{ once: true }}
                 className="text-gray-600 text-center lg:text-left"
               >
-                Cursus risus at ultrices mi tempus imperdiet nulla malesuada
-                pellentesque elit eget gravida cum sociis natoque penatibus
+              Major: Computer Science
+              oKey subjects: Computer Science, Mathematics
               </motion.p>
             </div>
           </motion.div>
@@ -363,7 +363,7 @@ const Experience = () => {
                   viewport={{ once: true }}
                   className="text-xl font-semibold text-gray-800 mb-2"
                 >
-                  Herald College
+                  Herald College Kathmandu
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -372,8 +372,8 @@ const Experience = () => {
                   viewport={{ once: true }}
                   className="text-gray-600 lg:text-right text-center"
                 >
-                  Cursus risus at ultrices mi tempus imperdiet nulla malesuada
-                  pellentesque elit eget gravida cum sociis natoque penatibus
+                 Graduated with a focus on frontend development, databases, and software development.
+                 Key coursework: Web Development, Data Structures, Algorithms, AI.
                 </motion.p>
               </div>
 
